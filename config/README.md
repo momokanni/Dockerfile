@@ -1,5 +1,8 @@
 #### spring-cloud-config Dockerfile 示例
 
+**启动命令**  
+`docker run -d -p 8763:8763 -e cloud_IP=47.94.128.132 -e server_port=8763 --name cloud_config  --network cloud_bridge docker2sun/config`
+
 config依赖于Eureka、rabbitMQ，所以就会涉及到 **容器间请求**。  
 >1. 创建Driver为bridge的网络。并将三个服务connect该网络。  
 >2. 进入到各个容器中，通过`ping 容器名` 测试网络连接状态  
