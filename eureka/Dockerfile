@@ -5,4 +5,4 @@ COPY eureka_start.sh /usr/local/sunlin/
 VOLUME /usr/local/sunlin/config
 WORKDIR /usr/local/sunlin/
 EXPOSE 8761
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/.urandom","-jar","eureka.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/.urandom","-Dspring.profiles.active=eureka2","-jar","eureka.jar"]
