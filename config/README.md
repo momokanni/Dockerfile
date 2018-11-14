@@ -1,7 +1,7 @@
 #### spring-cloud-config Dockerfile 示例
 
 **启动命令**  
-`docker run -d -p 8763:8763 -e cloud_IP=47.94.128.132 -e server_port=8763 --name cloud_config --network cloud_bridge docker2sun/cloud-config
+`docker run -d --memory 500M -p 8763:8763 -e cloud_IP=47.94.128.132 -e server_port=8763 --name cloud_config --network cloud_bridge docker2sun/cloud-config
 `
 
 config依赖于Eureka、rabbitMQ，所以就会涉及到 **容器间请求**。  
