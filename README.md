@@ -1,2 +1,2 @@
 # Dockerfile
-存放Dockerfile原文件及相关命令
+存放Dockerfile原文件及docker相关命令
