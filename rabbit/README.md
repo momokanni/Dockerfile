@@ -1,6 +1,6 @@
 命令：  
 
-`docker run -d --hostname rabbit --name rabbit_service -p 5672:5672 -p 15672:15672 --network cloud_bridge rabbitmq:3.7.8-management
+`docker run -d --memory 300M --hostname rabbit --name rabbit_service -p 5672:5672 -p 15672:15672 --network cloud_bridge rabbitmq:3.7.8-management
 `  
 
 `docker exec -it rabbit_service /bin/bash`  
